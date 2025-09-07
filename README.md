@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SecureSharing 
  
 ## Overview 
@@ -15,3 +16,6 @@ npx parcel index.html
 ## Running Backend 
 cd backend 
 mvn spring-boot:run   (if Spring Boot) 
+=======
+# SecureSharing
+>>>>>>> e82383eae615888a1029f4c90e3d82799ba16354
