@@ -1,12 +1,12 @@
-<<<<<<< HEAD
+
 # SecureSharing 
  
 ## Overview 
 This repository contains both the frontend and backend for the SecureSharing project. 
  
 ## Structure 
-- frontend/  = + HTML/CSS/JS 
-- backend/   = Boot (or Node.js) backend 
+- frontend/  = HTML/CSS/JS 
+- backend/   = Spring Boot
  
 ## Running Frontend 
 cd frontend 
