@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SecureShare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+    <div class="form-container">
+        <h2>Welcome Back</h2>
+        <p>Login to your SecureShare account.</p>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary btn-block">
+                Login <i class="fas fa-arrow-right-to-bracket"></i>
+            </button>
+        </form>
+        <p class="form-switch">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p class="form-switch"><a href="index.html">← Back to Home</a></p>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="fec.js"></script>
+</body>
+</html>

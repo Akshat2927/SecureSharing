@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureShare - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="header-left">
+                <a href="profile.html" class="user-profile-link">
+                    <div class="user-profile">
+                        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Default Avatar">
+                        <span id="welcome-user">Welcome, Guest</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="header-center">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#hero" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                        <li><a href="#upload" class="nav-link">Upload</a></li>
+                        <li><a href="#share" class="nav-link">Share</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-right">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="reveal-hero">Securely Share Data.<br>Simply & Instantly.</h1>
+            <p class="reveal-hero">The enterprise-grade platform for sharing sensitive data with absolute confidence and user-centric control.</p>
+            <a href="#upload" class="btn btn-primary btn-lg reveal-hero">Upload a File <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <main>
+        <!-- ABOUT -->
+        <section id="about" class="content-section">
+            <div class="container reveal about-us-container">
+                <div class="about-us-text">
+                    <h2 class="gradient-text"><i class="fas fa-users"></i> Built on Trust</h2>
+                    <p>Based in India, we are a team dedicated to building the next generation of secure data exchange platforms. Our vision is a world where privacy isn't a feature, but the foundation of digital collaboration.</p>
+                    <p>Recognizing the growing need for trustworthy solutions, we embarked on a mission to build SecureShare, empowering individuals and organizations to share data with absolute peace of mind.</p>
+                </div>
+                <div class="about-us-image">
+                    <img src="https://images.unsplash.com/photo-1558522195-e12713514948?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxzZWN1cml0eSUyMGRhdGF8ZW58MHx8fHwxNjE2ODI0NTk0&ixlib=rb-1.2.1&q=80&w=800" alt="Secure Data Sharing Illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION -->
+        <section id="solution" class="content-section">
+            <div class="container reveal">
+                <div class="solution-grid">
+                    <div class="solution-text">
+                        <h2 class="gradient-text"><i class="fas fa-brain"></i> The Modern Solution for Data Privacy</h2>
+                        <p>Our platform solves the critical risk of sharing sensitive information by providing end-to-end encrypted sharing with user-controlled access, ensuring your data is seen only by those you trust.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> End-to-End Encryption</li>
+                            <li><i class="fas fa-check-circle"></i> Granular Access Controls</li>
+                            <li><i class="fas fa-check-circle"></i> Full Audit Transparency</li>
+                        </ul>
+                    </div>
+                    <div class="solution-animation">
+                        <lottie-player src="https://lottie.host/a7b8a82e-9577-4488-8422-34861c8c6a0c/N1Ioyd2gP4.json" background="transparent" speed="1" style="width: 100%; max-width: 500px;" loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="how-it-works" class="content-section">
+            <div class="container reveal">
+                <h2 class="gradient-text">A Simple, Secure Process</h2>
+                <p class="section-subtitle">Sharing your sensitive files securely takes just a few clicks.</p>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Upload Your File</h3>
+                        <p>Drag and drop any file into our secure uploader. Choose your desired sensitivity and encryption level.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Generate a Secure Link</h3>
+                        <p>Create a unique, encrypted sharing link with set permissions and an optional expiration date.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Track Everything</h3>
+                        <p>Monitor all activity through the audit log. See who has viewed or downloaded your file and when.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPLOAD -->
+        <section id="upload" class="content-section">
+            <div class="container reveal">
+                <h2 class="gradient-text"><i class="fas fa-cloud-upload-alt"></i> Upload Your Data</h2>
+                <p class="section-subtitle">Your files are encrypted before they even leave your browser.</p>
+                <div id="drop-zone" class="drop-zone">
+                    <p>Drag & Drop files here or <strong>click to select</strong></p>
+                    <input type="file" id="file-input" multiple hidden>
+                </div>
+                <div class="upload-options">
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        Encrypt before upload <i class="fas fa-lock"></i>
+                    </label>
+                </div>
+                <div class="upload-btn-wrapper" style="margin-top: 15px;">
+                    <button id="upload-btn" class="btn btn-primary">
+                        <i class="fas fa-upload"></i> Upload
+                    </button>
+                </div>
+                <div id="file-previews"></div>
+            </div>
+        </section>
+
+        <!-- SHARE -->
+        <!-- SHARE -->
+<section id="share" class="content-section" style="background-color: #f9f9f9; padding: 30px 0;">
+  <div class="container reveal">
+    <h2 class="gradient-text"><i class="fas fa-share-alt"></i> Share Your File</h2>
+    <p class="section-subtitle">Choose how you want to share your uploaded file securely.</p>
+
+    <div class="share-methods" style="display: flex; justify-content: center; margin-top: 20px;">
+      <button id="share-secure-btn" 
+              class="btn btn-secondary" 
+              style="background-color: #007bff; color: white; font-weight: bold; padding: 12px 20px; border-radius: 6px;">
+        <i class="fas fa-lock"></i> Share Your Data Securely
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- SHARE MODAL -->
+<div id="share-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <button id="close-share-modal" class="close-btn">&times;</button>
+    <h3><i class="fas fa-share-alt"></i> Your Uploaded Files</h3>
+
+    <ul id="uploaded-files-list" style="list-style:none; padding:0; margin-top:15px;">
+      <!-- JS will insert user files here -->
+    </ul>
+
+    <div id="share-settings" style="display:none; margin-top:20px;">
+      <h4><i class="fas fa-lock"></i> Secure Share Settings</h4>
+
+      <div class="form-group">
+        <label><b>Password (Required)</b></label>
+        <input type="password" id="share-password" placeholder="Enter a password">
+      </div>
+
+      <div class="form-group">
+        <label><b>Expiration (Required)</b></label>
+        <select id="share-duration">
+          <option value="">-- Select Expiration --</option>
+          <option value="1h">1 Hour</option>
+          <option value="24h">24 Hours</option>
+          <option value="7d">7 Days</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+
+       <div id="custom-expiration-container" style="display:none; margin-top:10px;">
+    <label><b>Set Custom Expiration</b></label>
+    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+      <input type="number" id="custom-hours" placeholder="Hours" min="0" style="width:80px;">
+      <input type="number" id="custom-minutes" placeholder="Minutes" min="0" max="59" style="width:80px;">
+      <input type="number" id="custom-seconds" placeholder="Seconds" min="0" max="59" style="width:80px;">
+    </div>
+  </div>
+
+      <button id="generate-link-btn" class="btn btn-secondary" style="margin-top:10px;">
+        <i class="fas fa-magic"></i> Generate Link
+      </button>
+
+      <div id="generated-link-container" style="margin-top:15px; display:none;">
+        <label>Your Secure Link</label>
+        <input type="text" id="generated-link" readonly>
+        <button id="copy-link-btn" class="btn btn-secondary" style="margin-top:5px;">
+          <i class="fas fa-copy"></i> Copy Link
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+        <!-- CTA -->
+        <section id="cta" class="content-section">
+            <div class="container reveal">
+                <h2>Ready to Get Started?</h2>
+                <p>Create your free account today and experience a new standard in data security.</p>
+                <a href="signup.html" class="btn btn-primary btn-lg">Sign Up for Free</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="main-footer">
+        <div class="container footer-grid reveal" data-stagger-children="true">
+            <div class="footer-col reveal">
+                <h4>About</h4>
+                <p>The future of secure and private data collaboration, built with trust at its core.</p>
+            </div>
+            <div class="footer-col reveal">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#solution">Features</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#share">Share</a></li>
+                </ul>
+            </div>
+            <div class="footer-col reveal">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col reveal">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SecureShare. All Rights Reserved. India.</p>
+        </div>
+    </footer>
+
+    <!-- NOTIFICATIONS MODAL
+    <div id="notifications-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal-btn" class="close-btn">&times;</button>
+            <h3>Notifications</h3>
+            <ul class="notification-list">
+                <li><strong>John Smith</strong> shared "Project Phoenix" with you. <span>1h ago</span></li>
+                <li>Your file "annual-report-2025.pdf" was accessed by <strong>Jane Doe</strong>. <span>3h ago</span></li>
+                <li>The link for "old-proposal.docx" has expired. <span>2d ago</span></li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div id="toast" class="toast"></div>
+
+    <!-- SHARE FORM TEMPLATE (hidden, used by JS) -->
+<template id="share-form-template">
+  <div class="share-form" style="display:none; margin-top:10px; padding-left:20px;">
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter password" class="share-password"/>
+
+    <label><b>Expiration</b></label>
+    <select class="share-expiration">
+      <option value="">-- Select Expiration --</option>
+      <option value="1h">1 Hour</option>
+      <option value="24h">24 Hours</option>
+      <option value="7d">7 Days</option>
+      <option value="custom">Custom</option>
+    </select>
+
+    <div class="custom-expiration" style="display:none; gap:10px; margin-top:8px;">
+      <input type="number" class="custom-hours" placeholder="Hours" min="0" style="width:80px;">
+      <input type="number" class="custom-minutes" placeholder="Minutes" min="0" max="59" style="width:80px;">
+      <input type="number" class="custom-seconds" placeholder="Seconds" min="0" max="59" style="width:80px;">
+    </div>
+
+    <button class="btn-generate btn btn-secondary" style="margin-top:8px;">
+      <i class="fas fa-magic"></i> Generate Link
+    </button>
+
+    <div class="generated-link-container" style="display:none; margin-top:10px;">
+      <label>Your Secure Link</label>
+      <input type="text" class="generated-link" readonly>
+      <button class="btn-copy btn btn-secondary" style="margin-top:5px;">
+        <i class="fas fa-copy"></i> Copy Link
+      </button>
+    </div>
+  </div>
+</template>
+
+
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="fec.js"></script>
+    <script type="module" src="share.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Node / Parcel
+node_modules/
+dist/
+.parcel-cache/
+.env
+ECHO is on.
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.log
+ECHO is on.
+# OS / IDE
+.DS_Store
+.vscode/
+Thumbs.db
